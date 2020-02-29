@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:background="@color/lgrey"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:height="50dp"
+        android:background="@color/perf"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/head1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:width="100dp"
+        android:height="25dp"
+        android:text="@string/instrucn1"
+        android:textAlignment="textStart"
+        android:textColor="@color/grey"
+        android:textSize="20dp" />
+
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:singleLine="true"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:padding="12dp"
+                android:text="@string/opt1"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/white"
+                app:chipBackgroundColor="@color/perf"
+                app:chipCornerRadius="24dp"
+                app:chipIcon="@drawable/ic_1" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:padding="12dp"
+                android:text="@string/opt2"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/white"
+                app:chipBackgroundColor="@color/perf"
+                app:chipCornerRadius="24dp"
+                app:chipIcon="@drawable/ic_icon" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:padding="12dp"
+                android:text="@string/opt3"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/white"
+                app:chipBackgroundColor="@color/perf"
+                app:chipCornerRadius="24dp"
+                app:chipIcon="@drawable/ic_30" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:padding="12dp"
+                android:text="@string/opt4"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/white"
+                app:chipBackgroundColor="@color/perf"
+                app:chipCornerRadius="24dp"
+                app:chipIcon="@drawable/ic_android_black_24dp" />
+
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </HorizontalScrollView>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:foregroundTint="#FFFFFF"
+        android:hint="@string/income"
+        android:inputType="number"
+        android:shadowColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:textColorHint="@color/grey" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/save"
+        android:inputType="number"
+        android:textColorHint="@color/grey" />
+
+    <com.google.android.material.chip.Chip
+        style="@style/Widget.MaterialComponents.Chip.Action"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="expendAmt"
+        android:padding="12dp"
+        android:text="@string/expend"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/white"
+        app:chipBackgroundColor="@color/colorPrimaryDark"
+        app:chipCornerRadius="24dp"
+        app:chipIcon="@drawable/ic_attach_money_black_24dp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:scrollbars="none">
+
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:singleLine="true"
+            app:singleSelection="true">
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:height="50dp"
+
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/budget"
+            android:textAlignment="center"
+            android:textColor="@color/perf"
+            android:textSize="30dp"
+            android:layout_marginRight="119dp"
+            android:textStyle="bold"
+            />
+            <TextView
+                android:id="@+id/textView221"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:height="50dp"
+
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/optDyna"
+                android:textAlignment="center"
+                android:textColor="@color/perf"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_marginStart="50dp"
+                />
+        </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:scrollbars="none">
+
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:singleLine="true"
+            app:singleSelection="true">
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:height="50dp"
+
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/expend1"
+                android:textAlignment="center"
+                android:textColor="@color/perf"
+                android:textSize="30dp"
+                android:layout_marginRight="98dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/textView231"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:height="50dp"
+
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/optDyna"
+                android:textAlignment="center"
+                android:textColor="@color/perf"
+                android:textSize="30dp"
+                android:textStyle="bold"
+
+                />
+        </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:scrollbars="none">
+
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:singleLine="true"
+            app:singleSelection="true">
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:height="50dp"
+
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/savings"
+                android:textAlignment="center"
+                android:textColor="@color/perf"
+                android:textSize="30dp"
+                android:layout_marginRight="71dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/textView241"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:height="50dp"
+
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/optDyna"
+                android:textAlignment="center"
+                android:textColor="@color/perf"
+                android:textSize="30dp"
+                android:textStyle="bold"
+
+                />
+        </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
+
+</LinearLayout>
