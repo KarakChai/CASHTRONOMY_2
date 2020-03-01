@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="top"
-    android:background="@color/lgrey"
     android:orientation="vertical"
     tools:context=".MainActivity" >
 
@@ -16,10 +15,10 @@
         android:layout_marginBottom="25dp"
         android:height="50dp"
         android:background="@color/perf"
-        android:fontFamily="sans-serif-condensed-medium"
+        android:fontFamily="@font/amaranth_italic"
         android:text="@string/head1"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="30dp"
         android:textStyle="bold"
 
@@ -44,9 +43,15 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:backgroundTint="@color/perf"
-        android:shadowColor="@color/white"
-        android:text="Save" />
+        android:backgroundTint="@color/mgreen"
+        android:elevation="5dp"
+        android:shadowDy="4"
+        android:shadowRadius="40"
+        android:shadowColor="@color/lgrey"
+        android:hint="Save"
+        android:fontFamily="@font/amaranth_italic"
+        android:textColorHint="@color/white"
+        />
 
 
 </LinearLayout>

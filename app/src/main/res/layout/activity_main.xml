@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="top"
-    android:background="@color/white"
     android:orientation="vertical"
     tools:context=".MainActivity" >
 
@@ -22,7 +21,7 @@
         android:textColor="#F8F3F3"
         android:textSize="30dp"
         android:textStyle="bold"
-        android:elevation="100dp"/>
+        />
 
     <TextView
         android:id="@+id/textView3"
@@ -36,7 +35,6 @@
         android:paddingLeft="50dp"
         android:paddingRight="50dp"
         android:text="@string/instrucn1"
-        android:textAlignment="textStart"
         android:textColor="@color/mgreen"
         android:textSize="20sp" />
 
