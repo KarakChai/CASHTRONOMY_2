@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application_ITE1</string>
+    <string name="app_name">Cashtronomy</string>
     <string name="opt1">DAILY</string>
     <string name="opt2">WEEKLY</string>
     <string name="opt3">MONTHLY</string>
@@ -7,7 +7,7 @@
     <string name="income">Enter Income</string>
     <string name="save">Desired Savings</string>
     <string name="opt4">YEARLY</string>
-    <string name="head1">MONEY MANAGER</string>
+    <string name="head1">Cashtronomy</string>
     <string name="instrucn1">Please Select Income Renewal Rate</string>
     <string name="expend">Enter Detailed Expenditure</string>
     <string name="budget">BUDGET</string>
