@@ -45,13 +45,13 @@
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/mgreen"
         android:elevation="5dp"
+        android:fontFamily="@font/amaranth_italic"
+        android:hint="Save"
+        android:onClick="bckBtn"
+        android:shadowColor="@color/lgrey"
         android:shadowDy="4"
         android:shadowRadius="40"
-        android:shadowColor="@color/lgrey"
-        android:hint="Save"
-        android:fontFamily="@font/amaranth_italic"
-        android:textColorHint="@color/white"
-        />
+        android:textColorHint="@color/white" />
 
 
 </LinearLayout>
