@@ -17,10 +17,6 @@
         android:height="50dp"
         android:background="@color/perf"
         android:fontFamily="@font/amaranth_italic"
-        android:shadowColor="#00363333"
-        android:shadowDx="10"
-        android:shadowDy="20"
-        android:shadowRadius="5"
         android:text="@string/head1"
         android:textAlignment="center"
         android:textColor="#F8F3F3"
@@ -32,19 +28,23 @@
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
         android:width="100dp"
         android:height="25dp"
+        android:fontFamily="@font/amaranth_italic"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
         android:text="@string/instrucn1"
         android:textAlignment="textStart"
-        android:textColor="@color/grey"
-        android:textSize="20dp" />
-
+        android:textColor="@color/mgreen"
+        android:textSize="20sp" />
 
 
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hapticFeedbackEnabled="true"
         android:scrollbars="none">
 
         <com.google.android.material.chip.ChipGroup
@@ -121,6 +121,7 @@
         android:layout_marginTop="15dp"
         android:ems="10"
         android:foregroundTint="#FFFFFF"
+        android:hapticFeedbackEnabled="true"
         android:hint="@string/income"
         android:inputType="number"
         android:shadowColor="#FFFFFF"
@@ -133,17 +134,19 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:ems="10"
+        android:hapticFeedbackEnabled="true"
         android:hint="@string/save"
         android:inputType="number"
         android:textColorHint="@color/grey" />
 
-        <com.google.android.material.chip.Chip
+    <com.google.android.material.chip.Chip
         style="@style/Widget.MaterialComponents.Chip.Action"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="8dp"
-        android:layout_gravity="center"
+        android:hapticFeedbackEnabled="true"
         android:onClick="expendAmt"
         android:padding="12dp"
         android:text="@string/expend"
@@ -152,8 +155,8 @@
         android:textColor="@color/white"
         app:chipBackgroundColor="@color/perf"
         app:chipCornerRadius="24dp"
-        app:chipIcon="@drawable/ic_attach_money_black_24dp"
-            app:chipEndPadding="15dp"/>
+        app:chipEndPadding="15dp"
+        app:chipIcon="@drawable/ic_attach_money_black_24dp" />
 
 
     <HorizontalScrollView
@@ -169,36 +172,35 @@
             app:singleLine="true"
             app:singleSelection="true">
 
-        <TextView
-            android:id="@+id/textView22"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
-            android:height="50dp"
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="119dp"
+                android:layout_marginBottom="15dp"
+                android:height="50dp"
+                android:fontFamily="@font/amaranth_italic"
+                android:text="@string/budget"
+                android:textAlignment="center"
+                android:textColor="@color/mgreen"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                />
 
-            android:fontFamily="sans-serif-condensed-medium"
-            android:text="@string/budget"
-            android:textAlignment="center"
-            android:textColor="@color/perf"
-            android:textSize="30dp"
-            android:layout_marginRight="119dp"
-            android:textStyle="bold"
-            />
             <TextView
                 android:id="@+id/textView221"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
                 android:layout_marginBottom="15dp"
-                android:height="50dp"
 
-                android:fontFamily="sans-serif-condensed-medium"
+                android:height="50dp"
+                android:fontFamily="@font/amaranth_italic"
                 android:text="@string/optDyna"
                 android:textAlignment="center"
-                android:textColor="@color/perf"
+                android:textColor="@color/grey"
                 android:textSize="30dp"
-                android:textStyle="bold"
-                android:layout_marginStart="50dp"
-                />
+                android:textStyle="bold" />
         </com.google.android.material.chip.ChipGroup>
     </HorizontalScrollView>
     <HorizontalScrollView
@@ -221,10 +223,10 @@
                 android:layout_marginBottom="15dp"
                 android:height="50dp"
 
-                android:fontFamily="sans-serif-condensed-medium"
+                android:fontFamily="@font/amaranth_italic"
                 android:text="@string/expend1"
                 android:textAlignment="center"
-                android:textColor="@color/perf"
+                android:textColor="@color/mgreen"
                 android:textSize="30dp"
                 android:layout_marginRight="98dp"
                 android:textStyle="bold"
@@ -236,10 +238,9 @@
                 android:layout_marginBottom="15dp"
                 android:height="50dp"
 
-                android:fontFamily="sans-serif-condensed-medium"
-                android:text="@string/optDyna"
+                android:fontFamily="@font/amaranth_italic"                android:text="@string/optDyna"
                 android:textAlignment="center"
-                android:textColor="@color/perf"
+                android:textColor="@color/grey"
                 android:textSize="30dp"
                 android:textStyle="bold"
 
@@ -266,10 +267,10 @@
                 android:layout_marginBottom="15dp"
                 android:height="50dp"
 
-                android:fontFamily="sans-serif-condensed-medium"
+                android:fontFamily="@font/amaranth_italic"
                 android:text="@string/savings"
                 android:textAlignment="center"
-                android:textColor="@color/perf"
+                android:textColor="@color/mgreen"
                 android:textSize="30dp"
                 android:layout_marginRight="71dp"
                 android:textStyle="bold"
@@ -281,10 +282,10 @@
                 android:layout_marginBottom="15dp"
                 android:height="50dp"
 
-                android:fontFamily="sans-serif-condensed-medium"
+                android:fontFamily="@font/amaranth_italic"
                 android:text="@string/optDyna"
                 android:textAlignment="center"
-                android:textColor="@color/perf"
+                android:textColor="@color/grey"
                 android:textSize="30dp"
                 android:textStyle="bold"
 
